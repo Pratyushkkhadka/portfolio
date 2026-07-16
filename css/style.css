@@ -307,46 +307,74 @@ section {
     padding: 0 2.5rem;
 }
 
+
 .project-grid {
+
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
+
 }
+
 
 .project-card {
+
     background: #111e36;
-    padding: 2.2rem 1.8rem;
+    padding: 2rem;
     border-radius: 20px;
     border-bottom: 4px solid #2a4a7a;
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
-    transition:
-        transform 0.25s,
-        border-color 0.25s;
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight: 600;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    transition: 0.3s;
 }
+
 
 .project-card:hover {
-    transform: translateY(-6px);
+
+    transform: translateY(-8px);
     border-bottom-color: #3a7bd5;
+
 }
+
+
+.project-card h3 {
+
+    color: #7eb8ff;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+
+}
+
+
+.project-card p {
+
+    color: #c8d2e3;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+
+}
+
 
 .project-card a {
-    color: #b5d6ff;
-    display: block;
-    width: 100%;
-    height: 100%;
+
+    display: inline-block;
+    background: #1f3a5f;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 0.3s;
+
 }
+
 
 .project-card a:hover {
-    color: #fff;
-}
 
-.project-card span {
-    color: #b5d6ff;
-}
+    background: #3a7bd5;
+    color: white;
 
+}
 /* ---------- CONTACT ---------- */
 #contact {
     background: #0b132b;
