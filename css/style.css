@@ -306,8 +306,6 @@ section {
     margin: 0 auto;
     padding: 0 2.5rem;
 }
-
-
 .project-grid {
 
     display: grid;
@@ -315,7 +313,6 @@ section {
     gap: 2rem;
 
 }
-
 
 .project-card {
 
@@ -375,6 +372,95 @@ section {
     color: white;
 
 }
+
+   /* IMAGE SLIDER */
+ 
+
+#gallery{
+    background:#0b132b;
+}
+
+.gallery-wrapper{
+    max-width:1280px;
+    margin:auto;
+    padding:0 2.5rem;
+}
+
+.slider{
+    position:relative;
+    width:100%;
+    max-width:900px;
+    margin:40px auto;
+    overflow:hidden;
+    border-radius:18px;
+    box-shadow:0 10px 35px rgba(0,0,0,.5);
+}
+
+.slider-track{
+    display:flex;
+    transition:transform .5s ease-in-out;
+}
+
+.slide{
+    min-width:100%;
+}
+
+.slide img{
+    width:100%;
+    height:auto;
+    max-height:500px;
+    object-fit:contain;
+    display:block;
+    background:#0b132b;
+}
+
+.slider-btn{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background:rgba(0,0,0,.55);
+    color:white;
+    border:none;
+    padding:15px;
+    cursor:pointer;
+    font-size:28px;
+    border-radius:50%;
+    transition:.3s;
+    z-index:10;
+}
+
+.slider-btn:hover{
+    background:#3a7bd5;
+}
+
+.slider-btn.prev{
+    left:15px;
+}
+
+.slider-btn.next{
+    right:15px;
+}
+
+.slider-dots{
+    margin-top:20px;
+    text-align:center;
+}
+
+.dot{
+    display:inline-block;
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    margin:0 6px;
+    background:#777;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.dot.active{
+    background:#3a7bd5;
+}
+
 /* ---------- CONTACT ---------- */
 #contact {
     background: #0b132b;
