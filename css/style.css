@@ -10,6 +10,7 @@ body {
     color: #e6e9f0;
     line-height: 1.7;
     font-size: 18px;
+
 }
 
 a {
@@ -79,22 +80,53 @@ header {
     gap: 1rem;
 }
 
+/* ---------- PURE CSS LOGO ---------- */
 .logo {
-    height: 52px;
-    width: auto;
-    background: #1f3a5f;
-    padding: 0.2rem 1rem;
-    border-radius: 8px;
-    font-weight: 700;
-    font-size: 1.4rem;
-    color: #fff;
     display: flex;
     align-items: center;
-    letter-spacing: 1px;
+    gap: 0.6rem;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: clamp(1.2rem, 1.8vw, 1.8rem);
+    color: #fff;
+    user-select: none;
 }
 
-.logo span {
+.logo-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: clamp(36px, 4vw, 48px);
+    height: clamp(36px, 4vw, 48px);
+    background: #3a7bd5;
+    border-radius: 10px;
+    font-size: clamp(1.2rem, 1.8vw, 1.8rem);
+    font-weight: 800;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.logo-text {
+    display: flex;
+    align-items: baseline;
+    gap: 0.15rem;
+}
+
+.logo-text .first {
+    color: #ffffff;
+}
+
+.logo-text .dot {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: #3a7bd5;
+    border-radius: 50%;
+}
+
+.logo-text .last {
     color: #7eb8ff;
+    font-weight: 600;
 }
 
 nav ul {
